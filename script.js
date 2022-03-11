@@ -45,11 +45,13 @@ function loadItems(list) {
         let val
         if (ele.completed) {
             val = "Completed"
+            col = "DodgerBlue"
         }
         else {
             val = "Pending"
+            col = "LightGray"
         }
-        html += `<div class="card" style="width: 18rem; margin: 10px">
+        html += `<div class="card" style="width: 18rem; margin: 10px; background-color:${col};">
         <div class="card-body">
             <h5 class="card-title">${ele.title}</h5>
             <p class="card-text">User Id :  ${ele.userId}</p>
